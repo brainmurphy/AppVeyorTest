@@ -83,11 +83,13 @@ Brian Murphy Technical Test
 
 	Response:
 
+
 ```json
 {
 	WillDeliver: true
 }
 ```
+
 
 	- Return all postcodes.
 
@@ -97,12 +99,14 @@ Brian Murphy Technical Test
 
 	GET /api/Postcode
 
+
 ```json
 [
  	{ Postcode: W1 },
  	{ Postcode: W2 },
 ]
 ```
+
 
 	- Return data of a specific restaurant a postcode. If postcode is set to 0 the data is fetched for the zipcode of the restaurant.
 
@@ -112,6 +116,7 @@ Brian Murphy Technical Test
 
 	GET /api/Restaurant/{id}/PostcodeData/{postcode}
 
+
 ```json
 RestaurantPostcodeResource:
 {
@@ -119,6 +124,7 @@ RestaurantPostcodeResource:
 	AverageWaitTimeMinutes: 30
 }
 ```
+
 
 	- Return a list of restaurants available for delivery/pickup in a postcode.
 
@@ -135,6 +141,7 @@ RestaurantPostcodeResource:
 * Please describe yourself using either XML or JSON.
 
 	My social network should be able to describe me, so how about...
+
 
 ```json
 {
